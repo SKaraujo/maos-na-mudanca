@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Mãos na Mudança — mudança residencial com empacotamento, transporte, desembalamento e armazenamento.">
+<title>Mãos na Mudança | Uma mudança rápida e fácil</title>
+<style>
+:root{--orange:#f47721;--orange2:#d85f0c;--navy:#182235;--text:#293445;--muted:#667085;--cream:#fff7ef;--light:#f7f8fa;--white:#fff;--border:#e6e9ee;--shadow:0 16px 45px rgba(24,34,53,.10)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;color:var(--text);line-height:1.6;background:#fff}a{text-decoration:none}.container{width:min(1120px,92%);margin:auto}
+header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.97);backdrop-filter:blur(10px);border-bottom:1px solid var(--border)}
+.nav{min-height:74px;display:flex;align-items:center;justify-content:space-between;gap:20px}.logo{display:flex;align-items:center;gap:10px;color:var(--navy);font-weight:900;font-size:21px}.logo-mark{width:38px;height:38px;border-radius:11px;background:var(--orange);color:#fff;display:grid;place-items:center}.nav-links{display:flex;align-items:center;gap:24px}.nav-links a{color:var(--text);font-size:14px;font-weight:700}.nav-cta{background:var(--orange);color:#fff;padding:12px 20px;border-radius:10px;font-weight:900;box-shadow:0 8px 20px rgba(244,119,33,.22)}
+.hero{background:radial-gradient(circle at 85% 15%,rgba(244,119,33,.17),transparent 30%),linear-gradient(135deg,#fff,#fff8f1);padding:72px 0 62px}.hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}.eyebrow{display:inline-block;color:var(--orange2);background:#fff0e4;border:1px solid #ffd8bd;padding:7px 12px;border-radius:999px;font-size:13px;font-weight:900;letter-spacing:.04em}.hero h1{font-size:clamp(40px,5vw,64px);line-height:1.03;letter-spacing:-.045em;color:var(--navy);margin:18px 0}.hero h1 span{color:var(--orange)}.hero p{font-size:19px;color:var(--muted);max-width:650px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{display:inline-flex;justify-content:center;align-items:center;padding:15px 22px;border-radius:11px;font-weight:900}.btn-primary{background:var(--orange);color:#fff;box-shadow:0 12px 25px rgba(244,119,33,.25)}.btn-secondary{background:#fff;color:var(--navy);border:1px solid var(--border)}
+.hero-photos{display:grid;grid-template-columns:1fr 1fr;gap:12px}.photo{height:180px;border-radius:18px;position:relative;overflow:hidden;display:flex;align-items:flex-end;padding:18px;color:#fff;font-weight:900;box-shadow:var(--shadow);background-size:cover;background-position:center}.photo::after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 35%,rgba(0,0,0,.68))}.photo span{position:relative;z-index:1}.p1{background-image:url("https://images.pexels.com/photos/4246113/pexels-photo-4246113.jpeg?cs=srgb&fm=jpg")} .p2{background-image:url("https://images.pexels.com/photos/20706506/pexels-photo-20706506.jpeg?cs=srgb&fm=jpg")} .p3{background-image:url("https://images.pexels.com/photos/30444797/pexels-photo-30444797.jpeg?cs=srgb&fm=jpg")} .p4{background-image:url("https://images.pexels.com/photos/4246110/pexels-photo-4246110.jpeg?cs=srgb&fm=jpg")} 
+.section{padding:78px 0}.cream{background:var(--cream)}.light{background:var(--light)}.head{text-align:center;max-width:760px;margin:0 auto 40px}.kicker{font-size:13px;font-weight:900;letter-spacing:.08em;text-transform:uppercase;color:var(--orange2)}.head h2{font-size:clamp(30px,4vw,42px);line-height:1.1;color:var(--navy);margin:9px 0 13px}.head p{color:var(--muted);font-size:17px;margin:0}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.card{background:#fff;border:1px solid var(--border);border-radius:18px;overflow:hidden;transition:.2s}.card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}.card-img{height:145px;display:flex;align-items:flex-end;padding:16px;color:#fff;font-weight:900;position:relative}.card-img::after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 25%,rgba(0,0,0,.55))}.card-img span{position:relative;z-index:1}.card-body{padding:20px}.card h3{margin:0 0 7px;color:var(--navy)}.card p{margin:0;color:var(--muted);font-size:14px}.ci1{background:url("https://images.pexels.com/photos/4246113/pexels-photo-4246113.jpeg?cs=srgb&fm=jpg") center/cover}.ci2{background:url("https://images.pexels.com/photos/20706506/pexels-photo-20706506.jpeg?cs=srgb&fm=jpg") center/cover}.ci3{background:url("https://images.pexels.com/photos/4246110/pexels-photo-4246110.jpeg?cs=srgb&fm=jpg") center/cover}.ci4{background:url("https://images.pexels.com/photos/30444797/pexels-photo-30444797.jpeg?cs=srgb&fm=jpg") center/cover}
+.mid-cta{padding:36px 0;background:var(--navy);color:#fff}.mid-cta-inner{display:flex;justify-content:space-between;align-items:center;gap:20px}.mid-cta h2{margin:0;font-size:28px}.mid-cta p{margin:5px 0 0;color:#cbd2dc}.mid-cta .btn{white-space:nowrap}
+.benefits{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.benefit{background:#fff;border:1px solid var(--border);padding:28px;border-radius:18px}.benefit strong{color:var(--orange)}.benefit h3{margin:8px 0;color:var(--navy)}.benefit p{margin:0;color:var(--muted)}
+.trust{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:stretch}.trust-box{background:#fff;border:1px solid var(--border);border-radius:20px;padding:30px}.seal-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:20px}.seal{border:2px solid #e9a56e;border-radius:12px;padding:10px 13px;color:var(--navy);font-size:12px;font-weight:900;text-align:center;background:#fffaf5}.quote{font-size:18px;color:var(--navy);margin:0 0 18px}.quote-mark{color:var(--orange);font-size:42px;font-weight:900;line-height:.7}.client{font-size:14px;color:var(--muted);font-weight:700}.logos{display:flex;gap:12px;flex-wrap:wrap;margin-top:20px}.logo-placeholder{padding:12px 16px;border:1px solid var(--border);border-radius:9px;color:#667085;background:#fafafa;font-size:12px;font-weight:900}
+.alt-contact{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.contact-card{background:#fff;border:1px solid var(--border);border-radius:16px;padding:24px;text-align:center}.contact-icon{font-size:28px}.contact-card h3{margin:8px 0;color:var(--navy)}.contact-card p{margin:0;color:var(--muted);font-size:14px}.contact-card a{display:inline-block;margin-top:10px;color:var(--orange2);font-weight:900}
+.form-section{background:linear-gradient(135deg,#fff7ef,#fff)}.form-wrapper{max-width:880px;margin:auto;background:#fff;border:1px solid var(--border);border-radius:24px;padding:38px;box-shadow:var(--shadow)}.form-top{display:flex;justify-content:space-between;gap:20px;margin-bottom:24px}.form-top h2{margin:0;color:var(--navy);font-size:30px}.form-top p{margin:6px 0 0;color:var(--muted)}.badge{white-space:nowrap;background:#ecfdf3;color:#16704a;padding:8px 11px;border-radius:999px;font-size:12px;font-weight:900;height:max-content}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.field label{display:block;margin-bottom:7px;font-size:14px;font-weight:800;color:var(--navy)}.field input{width:100%;padding:14px;border:1px solid #dfe3e8;border-radius:10px;font-size:16px;outline:none}.field input:focus{border-color:var(--orange);box-shadow:0 0 0 4px rgba(244,119,33,.12)}.full{grid-column:1/-1}.submit{width:100%;margin-top:4px;padding:16px;border:0;border-radius:11px;background:var(--orange);color:#fff;font-size:17px;font-weight:900;cursor:pointer}.submit:hover{background:var(--orange2)}#form-status{text-align:center;min-height:24px;font-weight:800}.privacy{text-align:center;color:#8992a0;font-size:12px}
+footer{background:var(--navy);color:#fff;padding:34px 0}.footer{display:flex;justify-content:space-between;gap:20px;align-items:center}.footer small{color:#b9c1cd}.footer strong{font-size:18px}
+@media(max-width:900px){.hero-grid,.trust{grid-template-columns:1fr}.cards{grid-template-columns:1fr 1fr}.benefits,.alt-contact{grid-template-columns:1fr}.nav-links{display:none}.mid-cta-inner{display:block}.mid-cta .btn{margin-top:18px}}
+@media(max-width:620px){.hero{padding-top:50px}.hero-photos{grid-template-columns:1fr 1fr}.photo{height:145px}.cards{grid-template-columns:1fr}.form-wrapper{padding:24px}.form-grid{grid-template-columns:1fr}.full{grid-column:auto}.form-top{display:block}.badge{display:inline-block;margin-top:12px}.footer{text-align:center;display:block}.footer small{display:block;margin-top:10px}}
+</style>
+</head>
+<body>
+
+<header>
+<div class="container nav">
+<a class="logo" href="#"><span class="logo-mark">↗</span>Mãos na Mudança</a>
+<nav class="nav-links">
+<a href="#servicos">Serviços</a><a href="#confianca">Confiança</a><a href="#contato">Contato</a>
+</nav>
+<a class="nav-cta" href="#orcamento">Orçamento Grátis</a>
+</div>
+</header>
+
+<main>
+<section class="hero">
+<div class="container hero-grid">
+<div>
+<div class="eyebrow">UMA MUDANÇA RÁPIDA E FÁCIL</div>
+<h1>Você cuida do seu <span>novo começo.</span> A gente cuida da mudança.</h1>
+<p>Serviço completo para mudança residencial: empacotamento, transporte, desembalamento e opção de armazenamento.</p>
+<div class="actions"><a class="btn btn-primary" href="#orcamento">Orçamento Grátis</a><a class="btn btn-secondary" href="#servicos">Conheça os serviços</a></div>
+</div>
+<div class="hero-photos">
+<div class="photo p1"><span>📦 Empacotamento</span></div>
+<div class="photo p2"><span>🚚 Transporte</span></div>
+<div class="photo p3"><span>🏢 Armazenagem</span></div>
+<div class="photo p4"><span>📦 Proteção das caixas</span></div>
+</div>
+</div>
+</section>
+
+<section id="servicos" class="section">
+<div class="container">
+<div class="head"><div class="kicker">Tudo em um só lugar</div><h2>Uma mudança completa, sem complicação</h2><p>Os serviços aparecem de forma objetiva para que o visitante entenda rapidamente o que está sendo oferecido.</p></div>
+<div class="cards">
+<article class="card"><div class="card-img ci1"><span>📦 Empacotamento</span></div><div class="card-body"><h3>Empacotamento</h3><p>Organização e proteção dos objetos antes do transporte.</p></div></article>
+<article class="card"><div class="card-img ci2"><span>🚚 Transporte</span></div><div class="card-body"><h3>Transporte</h3><p>Transporte da mudança entre origem e destino.</p></div></article>
+<article class="card"><div class="card-img ci3"><span>🏠 Desembalamento</span></div><div class="card-body"><h3>Desembalamento</h3><p>Ajuda para finalizar a organização no novo endereço.</p></div></article>
+<article class="card"><div class="card-img ci4"><span>🏢 Armazenamento</span></div><div class="card-body"><h3>Armazenamento</h3><p>Opção para guardar os itens quando necessário.</p></div></article>
+</div>
+</div>
+</section>
+
+<section class="mid-cta">
+<div class="container mid-cta-inner"><div><h2>Comece sua mudança de forma simples.</h2><p>Informe os detalhes e solicite seu orçamento sem custo.</p></div><a class="btn btn-primary" href="#orcamento">Orçamento Grátis</a></div>
+</section>
+
+<section class="section light">
+<div class="container">
+<div class="head"><div class="kicker">Benefícios</div><h2>Por que escolher uma solução completa?</h2><p>Uma proposta focada em reduzir o esforço do cliente em cada etapa.</p></div>
+<div class="benefits">
+<div class="benefit"><strong>01 — PRATICIDADE</strong><h3>Menos preocupação</h3><p>O cliente encontra diferentes etapas da mudança em uma única proposta.</p></div>
+<div class="benefit"><strong>02 — SEGURANÇA</strong><h3>Cuidado com seus itens</h3><p>Os objetos são considerados desde a preparação até o destino.</p></div>
+<div class="benefit"><strong>03 — ATENDIMENTO</strong><h3>Orçamento personalizado</h3><p>As informações da mudança ajudam a entender a necessidade do cliente.</p></div>
+</div>
+</div>
+</section>
+
+<section id="confianca" class="section cream">
+<div class="container">
+<div class="head"><div class="kicker">Confiança</div><h2>Segurança para uma decisão importante</h2><p>Elementos de prova social ajudam o visitante a avaliar a proposta antes de solicitar o orçamento.</p></div>
+<div class="trust">
+<div class="trust-box">
+<div class="quote-mark">“</div>
+<p class="quote">Uma experiência de mudança organizada, com cuidado desde o empacotamento até a chegada ao novo endereço.</p>
+<div class="client">Depoimento de cliente</div>
+<div class="seal-row">
+<div class="seal">✓ MUDANÇA<br>SEGURA</div>
+<div class="seal">✓ TRANSPORTE<br>CONFIÁVEL</div>
+<div class="seal">✓ ATENDIMENTO<br>PERSONALIZADO</div>
+</div>
+</div>
+<div class="trust-box">
+<h3 style="margin-top:0;color:#182235">Reconhecimento e credibilidade</h3>
+<p style="color:#667085">Espaço reservado para os logotipos das associações ou parceiros do setor utilizados na proposta.</p>
+<div class="logos">
+<div class="logo-placeholder">ASSOCIAÇÃO DO SETOR</div>
+<div class="logo-placeholder">PARCEIRO</div>
+<div class="logo-placeholder">PARCEIRO</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="contato" class="section">
+<div class="container">
+<div class="head"><div class="kicker">Fale conosco</div><h2>Escolha a forma mais fácil de entrar em contato</h2><p>Além do formulário, a página pode oferecer canais alternativos para quem prefere contato direto.</p></div>
+<div class="alt-contact">
+<div class="contact-card"><div class="contact-icon">📞</div><h3>Telefone</h3><p>Atendimento para dúvidas e informações.</p><a href="#orcamento">Informar telefone</a></div>
+<div class="contact-card"><div class="contact-icon">💬</div><h3>Chat / WhatsApp</h3><p>Converse rapidamente sobre sua mudança.</p><a href="#orcamento">Abrir contato</a></div>
+<div class="contact-card"><div class="contact-icon">📍</div><h3>Endereço</h3><p>Localização e informações da empresa.</p><a href="#orcamento">Ver informações</a></div>
+</div>
+</div>
+</section>
+
+<section id="orcamento" class="section form-section">
+<div class="container">
+<div class="form-wrapper">
+<div class="form-top"><div><h2>Solicite seu orçamento grátis</h2><p>Preencha os campos abaixo e envie sua solicitação.</p></div><div class="badge">Formulário de interesse</div></div>
+<form id="contact-form" action="https://formspree.io/f/maenzzdb" method="POST">
+<input type="hidden" name="assunto" value="Novo lead - Mãos na Mudança">
+<div class="form-grid">
+<div class="field"><label for="nome">Nome</label><input id="nome" name="nome" type="text" placeholder="Seu nome" required></div>
+<div class="field"><label for="contato-form">WhatsApp ou e-mail</label><input id="contato-form" name="contato" type="text" placeholder="Seu contato" required></div>
+<div class="field"><label for="origem">CEP de origem</label><input id="origem" name="cep_origem" type="text" placeholder="00000-000" required></div>
+<div class="field"><label for="destino">CEP de destino</label><input id="destino" name="cep_destino" type="text" placeholder="00000-000" required></div>
+<div class="field"><label for="data">Data prevista da mudança</label><input id="data" name="data_mudanca" type="date" required></div>
+<div class="field"><label for="comodos">Número de cômodos</label><input id="comodos" name="numero_comodos" type="number" min="1" placeholder="Ex.: 4" required></div>
+<div class="full"><button class="submit" type="submit">Quero meu orçamento grátis</button><p id="form-status"></p><p class="privacy">Seus dados são enviados pelo formulário de contato.</p></div>
+</div>
+</form>
+</div>
+</div>
+</section>
+</main>
+
+<div style="padding:18px 0;text-align:center;background:#f7f8fa;color:#667085;font-size:12px">Imagens ilustrativas: Pexels — <a href="https://www.pexels.com/" target="_blank" rel="noopener" style="color:#d85f0c;font-weight:800">Pexels</a>.</div>
+<footer>
+<div class="container footer"><div><strong>Mãos na Mudança</strong></div><small>Uma mudança rápida e fácil.</small></div>
+</footer>
+
+<script>
+const form=document.getElementById("contact-form"),status=document.getElementById("form-status");
+form.addEventListener("submit",async(e)=>{e.preventDefault();const b=form.querySelector("button");b.disabled=true;b.textContent="Enviando...";status.textContent="";
+try{const r=await fetch(form.action,{method:"POST",body:new FormData(form),headers:{Accept:"application/json"}});
+if(r.ok){status.textContent="Obrigado! Seu pedido foi enviado com sucesso.";status.style.color="#16704a";form.reset()}else{status.textContent="Não foi possível enviar agora. Tente novamente.";status.style.color="#b42318"}}catch(x){status.textContent="Erro de conexão. Tente novamente.";status.style.color="#b42318"}finally{b.disabled=false;b.textContent="Quero meu orçamento grátis"}});
+</script>
+</body>
+</html>
